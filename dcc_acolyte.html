@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dungeon Crawl Classics Low Level NPC Acolyte Generator</title>
+    
+	<meta charset="UTF-8">
+	<meta name="description" content="Dungeon Crawl Classics Zero Level Character Generator. Goodman Games.">
+	<meta name="keywords" content="Dungeon Crawl Classics, Goodman Games,HTML5,CSS,JavaScript">
+	<meta name="author" content="Mark Tasaka 2016">
+	<link rel="stylesheet" type="text/css" href="css/dcc_four_sheet_npc_acolyte.css">
+	
+</head>
+<body>
+	
+
+	
+   
+  <img id="character_sheet"/>
+   <section>
+	   
+	   <aside id="topleft">
+    <p id="name0"></p>
+	
+		
+		<span id="strength0"></span> <span id="strengthMod0"></span>
+		<span id="agility0"></span>  <span id="agilityMod0"></span>
+		<span id="stamina0"></span>  <span id="staminaMod0"></span>
+		<span id="personality0"></span> <span id="personalityMod0"></span>
+		<span id="intelligence0"></span> <span id="intelligenceMod0"></span>
+		<span id="luck0"></span> <span id="luckMod0"></span>
+		   
+		<p id="background0"><span id="occupation0"></span> [trained weapon: <span id="trainedWeapon0"></span>]</p>
+		   
+
+		<p id="birthAugur0">Lucky Sign: <span id="luckySign0"></span>: <span id="luckyRoll0"></span> (
+		   <span id="LuckySignBonus0"></span>)</p>
+		
+		<span id="hitPoints0"></span> 
+		  
+		   <span id="modifiedArmourClass0"></span> <span id="baseArmourClass0"></span>
+		
+		<p id="armour0"></p>
+		<span id="acBonus0"></span>
+		<span id="checkPen0"></span>
+		<span id="speedPen0"></span>
+		<span id="fumblePen0"></span>
+		   
+		 <span id="primaryWeapon0"></span><span id="primaryWeaponDamage0"></span>
+		   
+		 <span id="secondaryWeapon0"></span><span id="secondaryWeaponDamage0"></span>
+		   
+		<p id="languages0">Languages: <span id="baseLanguages0"></span><span id="bonusLanguages0"></span></p>
+		   
+		<span id="fumbleDie0"></span>
+		<span id="critDie0"></span>
+		<span id="critTable0"></span>
+		   
+		   
+		<span id="melee0"></span>
+		 <span id="range0"></span>
+		
+		 <span id="speed0"></span>
+		
+		   
+		   <span id="ref0"></span>
+		   <span id="fort0"></span>
+		   <span id="will0"></span>
+		   
+		   <span id="init0"></span>
+		   
+		   <span id="equipment0"></span>
+		   
+		   <span id="wealth0"></span>
+		   <span id="wealth20"></span>
+		   
+		   <span id="dieRollMethod0"></span>
+		   
+		   <span id="special0"></span>
+		   
+		</aside>
+
+	
+	   <aside id="topright">
+	
+     <p id="name1"></p>
+	
+		
+		<span id="strength1"></span> <span id="strengthMod1"></span>
+		<span id="agility1"></span>  <span id="agilityMod1"></span>
+		<span id="stamina1"></span>  <span id="staminaMod1"></span>
+		<span id="personality1"></span> <span id="personalityMod1"></span>
+		<span id="intelligence1"></span> <span id="intelligenceMod1"></span>
+		<span id="luck1"></span> <span id="luckMod1"></span>
+		   
+		<p id="background1"><span id="occupation1"></span> [trained weapon: <span id="trainedWeapon1"></span>]</p>
+		   
+		
+ 
+		
+		<p id="birthAugur1">Lucky Sign: <span id="luckySign1"></span>: <span id="luckyRoll1"></span> (
+		   <span id="LuckySignBonus1"></span>)</p>
+		
+		<span id="hitPoints1"></span> 
+		  
+		   <span id="modifiedArmourClass1"></span> <span id="baseArmourClass1"></span>
+		
+		<p id="armour1"></p>
+		<span id="acBonus1"></span>
+		<span id="checkPen1"></span>
+		<span id="speedPen1"></span>
+		<span id="fumblePen1"></span>
+		   
+		 <span id="primaryWeapon1"></span><span id="primaryWeaponDamage1"></span>
+		   
+		 <span id="secondaryWeapon1"></span><span id="secondaryWeaponDamage1"></span>
+		   
+		<p id="languages1">Languages: <span id="baseLanguages1"></span><span id="bonusLanguages1"></span></p>
+		   
+		<span id="fumbleDie1"></span>
+		<span id="critDie1"></span>
+		<span id="critTable1"></span>
+		   
+		   
+		<span id="melee1"></span>
+		 <span id="range1"></span>
+		
+		 <span id="speed1"></span>
+		
+		   
+		   <span id="ref1"></span>
+		   <span id="fort1"></span>
+		   <span id="will1"></span>
+		   
+		   <span id="init1"></span>
+		   
+		   <span id="equipment1"></span>
+		   
+		   <span id="wealth1"></span>
+		   <span id="wealth21"></span>
+		   
+		   <span id="dieRollMethod1"></span>
+		   		   
+		   <span id="special1"></span>
+	   </aside>
+	
+	   <aside id="bottomleft">
+	
+     <p id="name2"></p>
+	
+		
+		<span id="strength2"></span> <span id="strengthMod2"></span>
+		<span id="agility2"></span>  <span id="agilityMod2"></span>
+		<span id="stamina2"></span>  <span id="staminaMod2"></span>
+		<span id="personality2"></span> <span id="personalityMod2"></span>
+		<span id="intelligence2"></span> <span id="intelligenceMod2"></span>
+		<span id="luck2"></span> <span id="luckMod2"></span>
+		   
+		<p id="background2"><span id="occupation2"></span> [trained weapon: <span id="trainedWeapon2"></span>]</p>
+		   
+		
+ 
+		
+		<p id="birthAugur2">Lucky Sign: <span id="luckySign2"></span>: <span id="luckyRoll2"></span> (
+		   <span id="LuckySignBonus2"></span>)</p>
+		
+		<span id="hitPoints2"></span> 
+		  
+		   <span id="modifiedArmourClass2"></span> <span id="baseArmourClass2"></span>
+		
+		<p id="armour2"></p>
+		<span id="acBonus2"></span>
+		<span id="checkPen2"></span>
+		<span id="speedPen2"></span>
+		<span id="fumblePen2"></span>
+		   
+		 <span id="primaryWeapon2"></span><span id="primaryWeaponDamage2"></span>
+		   
+		 <span id="secondaryWeapon2"></span><span id="secondaryWeaponDamage2"></span>
+		   
+		<p id="languages2">Languages: <span id="baseLanguages2"></span><span id="bonusLanguages2"></span></p>
+		   
+		<span id="fumbleDie2"></span>
+		<span id="critDie2"></span>
+		<span id="critTable2"></span>
+		   
+		   
+		<span id="melee2"></span>
+		 <span id="range2"></span>
+		
+		 <span id="speed2"></span>
+		
+		   
+		   <span id="ref2"></span>
+		   <span id="fort2"></span>
+		   <span id="will2"></span>
+		   
+		   <span id="init2"></span>
+		   
+		   <span id="equipment2"></span>
+		   
+		   <span id="wealth2"></span>
+		   <span id="wealth22"></span>
+		   
+		   <span id="dieRollMethod2"></span>
+	   		   
+		   <span id="special2"></span>
+	   
+	   </aside>	
+	
+		   <aside id="bottomright">
+	
+     <p id="name3"></p>
+	
+		
+		<span id="strength3"></span> <span id="strengthMod3"></span>
+		<span id="agility3"></span>  <span id="agilityMod3"></span>
+		<span id="stamina3"></span>  <span id="staminaMod3"></span>
+		<span id="personality3"></span> <span id="personalityMod3"></span>
+		<span id="intelligence3"></span> <span id="intelligenceMod3"></span>
+		<span id="luck3"></span> <span id="luckMod3"></span>
+		   
+		<p id="background3"><span id="occupation3"></span> [trained weapon: <span id="trainedWeapon3"></span>]</p>
+		   
+		
+ 
+		
+		<p id="birthAugur3">Lucky Sign: <span id="luckySign3"></span>: <span id="luckyRoll3"></span> (
+		   <span id="LuckySignBonus3"></span>)</p>
+		
+		<span id="hitPoints3"></span> 
+		  
+		   <span id="modifiedArmourClass3"></span> <span id="baseArmourClass3"></span>
+		
+		<p id="armour3"></p>
+		<span id="acBonus3"></span>
+		<span id="checkPen3"></span>
+		<span id="speedPen3"></span>
+		<span id="fumblePen3"></span>
+		   
+		 <span id="primaryWeapon3"></span><span id="primaryWeaponDamage3"></span>
+		   
+		 <span id="secondaryWeapon3"></span><span id="secondaryWeaponDamage3"></span>
+		   
+		<p id="languages3">Languages: <span id="baseLanguages3"></span><span id="bonusLanguages3"></span></p>
+		   
+		<span id="fumbleDie3"></span>
+		<span id="critDie3"></span>
+		<span id="critTable3"></span>
+		   
+		   
+		<span id="melee3"></span>
+		 <span id="range3"></span>
+		
+		 <span id="speed3"></span>
+		
+		   
+		   <span id="ref3"></span>
+		   <span id="fort3"></span>
+		   <span id="will3"></span>
+		   
+		   <span id="init3"></span>
+		   
+		   <span id="equipment3"></span>
+		   
+		   <span id="wealth3"></span>
+		   <span id="wealth23"></span>
+		   
+		   <span id="dieRollMethod3"></span>
+			   
+			   		   
+		   <span id="special3"></span>
+	   </aside>	
+
+	
+	</section>
+	
+
+		
+  <script>
+	  
+	  /*
+	  rollDice (numberOfSides, numberOfDiceRolled, numberOfDiceRemoved, baseValue)
+	  */
+	  	function rollDice(numberOfSides, numberOfDiceRolled, numberOfDiceRemoved, baseValue) {
+		
+		if(numberOfSides === undefined || typeof numberOfSides !== 'number'||numberOfSides <=2 || numberOfSides >=30){
+			numberOfSides = 6;
+		}
+		
+		if(numberOfDiceRolled < 0){
+			numberOfDiceRolled =2;
+		}
+		
+		if(numberOfDiceRemoved === undefined || typeof numberOfDiceRemoved !== 'number'||numberOfDiceRemoved >= numberOfDiceRolled){
+			numberOfDiceRemoved =0;
+		}
+		
+		if(baseValue === undefined || typeof baseValue !== 'number'||baseValue < 0){
+			baseValue = 0;
+		}
+		
+		var numbers = [];
+		
+
+		for(var i = 0; i < numberOfDiceRolled; i++){
+			numbers[i] = Math.floor((Math.random() * 6) + 1);
+		}
+		
+        numbers.sort();
+        
+		var sum = baseValue;
+			
+		for(var i = numberOfDiceRemoved; i < numberOfDiceRolled; i++){
+			sum += numbers[i];
+		}
+			
+		return sum ;
+	}
+
+	  
+	/*
+	 Character() - Zero Level Character Constructor
+	*/
+	function Character() {
+	
+    var strength = rollDice(6, 3, 0, 0);
+    var agility = rollDice(6, 3, 0, 0);
+    var stamina = rollDice(6, 3, 0, 0);
+    var	personality = rollDice(6, 1, 0, 12);
+    var	intelligence = rollDice(10, 1, 0, 8);
+    var	luck = rollDice(6, 3, 0, 0);
+	var	occupation = getOccupation();
+	var birthAugur = getLuckySign();
+	var strengthModifier = getStrengthModifier(strength);
+	var staminaModifier = getStaminaModifier(stamina);
+	var agilityModifier = getAgilityModifier(agility);
+	var personalityModifier = getPersonalityModifier(personality);
+	var intelligenceModifier = getIntelligenceModifier(intelligence);
+	var acolyte = getAcolyte();
+	var baseAC = getBaseArmourClass(agilityModifier) + adjustAC(birthAugur, getLuckModifier(luck));
+		
+		var zeroLevelCharacter = {
+			"name": "ACOLYTE - DCC Zero Level NPC",
+			"strength": strength,
+			"agility": agility,
+			"stamina": stamina,
+			"personality": personality,
+			"intelligence": intelligence,
+			"luck": luck,
+			"strengthModifier": strengthModifier,
+			"agilityModifier": agilityModifier,
+			"staminaModifier": staminaModifier,
+			"personalityModifier": personalityModifier,
+			"intelligenceModifier": intelligenceModifier,
+			"luckModifier":  getLuckModifier(luck),
+			"occupation":  occupation.occupation,
+			"trainedWeapon": occupation.trainedWeapon,
+			"luckySign": birthAugur.luckySign,
+			"luckyRoll": birthAugur.luckyRoll,
+			"luckySignBonus": getLuckModifier(luck),
+			"baseArmourClass": baseAC,
+			"armour": acolyte.armour,
+			"modifiedArmourClass": baseAC + acolyte.protection,
+			"baseLanguages": "Common", 
+			"bonusLanguages": getBonusLanguages (intelligenceModifier, birthAugur, getLuckModifier(luck)),
+			"hitPoints": Math.floor((Math.random() * 6) + 2) + staminaModifier + hitPointAdjustPerLevel(birthAugur,  getLuckModifier(luck)),
+			"fumbleDie": acolyte.fumbleDie + "" + addSign(adjustFumble(birthAugur, getLuckModifier(luck))),
+			"critDie": "d4" + addSign(adjustCrit(birthAugur, getLuckModifier(luck))),
+			"critTable": "I",
+			"melee": strengthModifier + meleeAdjust(birthAugur, getLuckModifier(luck)),
+			"range": agilityModifier + rangeAdjust(birthAugur, getLuckModifier(luck)),
+			"speed": acolyte.speed + addLuckToSpeed(birthAugur, getLuckModifier(luck)) + "'",
+			"ref": agilityModifier + adjustRef(birthAugur, getLuckModifier(luck)),
+			"fort": staminaModifier + adjustFort(birthAugur, getLuckModifier(luck)),
+			"will": personalityModifier + adjustWill(birthAugur, getLuckModifier(luck)),
+			"init": agilityModifier + adjustInit(birthAugur, getLuckModifier(luck)),
+			"equipment": getAcolyteGear().gear + getAcolytePersonalItems().items + acolyte.items,
+			"wealth": Math.floor((Math.random() * 12))  + 1 + " sp",
+			"wealth2": Math.floor((Math.random() * 12)) + Math.floor((Math.random() * 12)) + 2 + " cp",
+			"dieRollMethod": "ACOLYTE (human): HD 1d8; min hp 2; min Per 13; min Int 9",
+			"primaryWeapon": acolyte.primaryWeapon,
+			"primaryWeaponDamage": acolyte.primaryWeaponDamage,
+			"secondaryWeapon": acolyte.secondaryWeapon,
+			"secondaryWeaponDamage": acolyte.secondaryWeaponDamage,
+			"acBonus": acolyte.protection,
+			"checkPen": acolyte.checkPenality,
+			"speedPen": acolyte.speedPenality + "'",
+			"fumblePen": acolyte.fumbleDie,
+			"special": "Special Abilities:<br />Charm (1/day): Charm any friendly humaniod their cause for 1d4 hours (DC 11 Will Save to Resist).<br />Harmful spells (2/day): 1d6+1 damage, range 50' (DC 11 Will for half damage)."
+		
+
+		};
+	    if(zeroLevelCharacter.hitPoints <= 1 ){
+			zeroLevelCharacter.hitPoints = 2;
+		}
+		return zeroLevelCharacter;
+	  
+	  }
+	  
+
+    
+     //getStrengthModifier(strength) - returns the Strength Modifier, which is based on the Strength Score
+    
+    function getStrengthModifier(strength){
+        if(strength === undefined || typeof strength !== 'number'|| strength <=2 || strength >=19){
+            //invalid
+            return -3;
+        }
+		if(strength >=4 && strength <=5){
+			return -2;
+		}
+		else if(strength >=6 && strength <=8){
+			return -1;
+		}
+		else if(strength >=9 && strength <=12){
+			return + 0;
+		}
+		else if(strength >=13 && strength <=15){
+			return + 1;
+		}	
+		else if(strength >=16 && strength <=17){
+			return + 2;
+		}		
+		else if(strength ==18){
+			return + 3;
+		}	
+		return -3;
+	}
+
+
+    
+    // getAgilityModifier(agility) - returns the Agility Modifier, which is based on the Agility Score
+    
+    function getAgilityModifier(agility){
+        if(agility === undefined || typeof agility !== 'number'|| agility <=2 || agility >=19){
+            //invalid
+            return -3;
+        }
+		if(agility >=4 && agility <=5){
+			return -2;
+		}
+		else if(agility >=6 && agility <=8){
+			return -1;
+		}
+		else if(agility >=9 && agility <=12){
+			return 0;
+		}
+		else if(agility >=13 && agility <=15){
+			return 1;
+		}	
+		else if(agility >=16 && agility <=17){
+			return 2;
+		}		
+		else if(agility ==18){
+			return 3;
+		}	
+		return -3;
+	}
+
+    //getStaminaModifier(stamina) - returns the Stamina Modifier, which is based on the Stamina Score
+    function getStaminaModifier(stamina){
+        if(stamina === undefined || typeof stamina !== 'number'|| stamina <=2 || stamina >=19){
+            //invalid
+            return -3;
+        }
+		if(stamina >=4 && stamina <=5){
+			return -2;
+		}
+		else if(stamina >=6 && stamina <=8){
+			return -1;
+		}
+		else if(stamina >=9 && stamina <=12){
+			return + 0;
+		}
+		else if(stamina >=13 && stamina <=15){
+			return + 1;
+		}	
+		else if(stamina >=16 && stamina <=17){
+			return + 2;
+		}		
+		else if(stamina ==18){
+			return + 3;
+		}	
+		return -3;
+	}
+
+    
+    //getPersonalityModifier(personality) - returns the Personality Modifier, which is based on the Personality Score
+    function getPersonalityModifier(personality){
+        if(personality === undefined || typeof personality !== 'number'|| personality <=2 || personality >=19){
+            //invalid
+            return -3;
+        }
+		if(personality >=4 && personality <=5){
+			return -2;
+		}
+		else if(personality >=6 && personality <=8){
+			return -1;
+		}
+		else if(personality >=9 && personality <=12){
+			return + 0;
+		}
+		else if(personality >=13 && personality <=15){
+			return + 1;
+		}	
+		else if(personality >=16 && personality <=17){
+			return + 2;
+		}		
+		else if(personality ==18){
+			return + 3;
+		}	
+		return -3;
+	}
+
+    
+    //getIntelligenceModifier(intelligence) - returns the Intelligence Modifier, which is based on the Intelligence Score 
+    function getIntelligenceModifier(intelligence){
+        if(intelligence === undefined || typeof intelligence !== 'number'|| intelligence <=2 || intelligence >=19){
+            //invalid
+            return -3;
+        }
+		if(intelligence >=4 && intelligence <=5){
+			return -2;
+		}
+		else if(intelligence >=6 && intelligence <=8){
+			return -1;
+		}
+		else if(intelligence >=9 && intelligence <=12){
+			return + 0;
+		}
+		else if(intelligence >=13 && intelligence <=15){
+			return + 1;
+		}	
+		else if(intelligence >=16 && intelligence <=17){
+			return + 2;
+		}		
+		else if(intelligence ==18){
+			return + 3;
+		}	
+		return -3;
+	}
+
+    
+    // getLuckModifier(luck) - returns the luck Modifier, which is based on the luck Score
+    
+    function getLuckModifier(luck){
+        if(luck === undefined || typeof luck !== 'number'|| luck <=2 || luck >=19){
+            //invalid
+            return -3;
+        }
+		if(luck >=4 && luck <=5){
+			return -2;
+		}
+		else if(luck >=6 && luck <=8){
+			return -1;
+		}
+		else if(luck >=9 && luck <=12){
+			return + 0;
+		}
+		else if(luck >=13 && luck <=15){
+			return + 1;
+		}	
+		else if(luck >=16 && luck <=17){
+			return + 2;
+		}		
+		else if(luck ==18){
+			return + 3;
+		}	
+		return -3;
+	}
+	  
+	  
+	  
+	  
+//  getOccupation() - returns the Randomly Generated Occupation
+function getOccupation(){
+	var occupations = [
+		{"occupation": "Zealot", "trainedWeapon": "Cudgel (as club)"},
+		{"occupation": "Fanatic", "trainedWeapon": "Staff"},
+		{"occupation": "Altar Boy/Girl", "trainedWeapon": "Stick (as staff)"},
+		{"occupation": "Monk", "trainedWeapon": "Stick (as staff)"},
+		{"occupation": "Minister's Assistant", "trainedWeapon": "Mace"},
+		{"occupation": "Convert", "trainedWeapon": "Sling"},
+		{"occupation": "Follower", "trainedWeapon": "Club"},
+		{"occupation": "Healer's Assistant", "trainedWeapon": "Stick (as staff)"},
+		{"occupation": "Novice", "trainedWeapon": "Staff"},
+		{"occupation": "Follower", "trainedWeapon": "Staff"},
+		{"occupation": "Aspirant", "trainedWeapon": "Cudgel (as club)"},
+		{"occupation": "Seeker", "trainedWeapon": "Mace"}
+		];
+		return occupations[Math.floor(Math.random() * 12)]; 
+}
+	  
+
+	  
+//getLuckySign() - returns a randomly generated Lucky Sign 
+function getLuckySign(){
+    var luckySign = [
+        {"luckySign": "Harsh winter", "luckyRoll": "All attack rolls"},
+        {"luckySign": "The bull", "luckyRoll": "Melee attack rolls"},
+        {"luckySign": "Fortunate date", "luckyRoll": "Missle fire attack rolls"},
+        //{"luckySign": "Raised by wolves", "luckyRoll": "Unarmed attack rolls"},
+        {"luckySign": "Conceived on horseback", "luckyRoll": "Mounted attack rolls"},
+        {"luckySign": "Born on the battlefield", "luckyRoll": "Damage rolls"},
+        {"luckySign": "Path of the bear", "luckyRoll": "Melee damage rolls"},
+        {"luckySign": "Hawkeye", "luckyRoll": "Missle damage rolls"},
+        {"luckySign": "Pack hunter", "luckyRoll": "Attack and damage rolls for 0-level starting weapon"},
+        {"luckySign": "Born under the loom", "luckyRoll": "Skill checks"},
+        //{"luckySign": "Fox's cunning", "luckyRoll": "Find/disable traps"},
+        //{"luckySign": "Four-leafed clover", "luckyRoll": "Find secret doors"},
+        {"luckySign": "Seventh son", "luckyRoll": "Spell checks"},
+        {"luckySign": "The raging storm", "luckyRoll": "Spell damage"},
+        {"luckySign": "Righteous heart", "luckyRoll": "Turn unholy checks"},
+        {"luckySign": "Surived the plague", "luckyRoll": "Magical healing"},
+        {"luckySign": "Luck sign", "luckyRoll": "Saving throws"},
+        {"luckySign": "Guardian angel", "luckyRoll": "Saving throws to escape traps"},
+        {"luckySign": "Survived a spider bite", "luckyRoll": "Saving throws against poison"},
+        {"luckySign": "Struck by Lightning", "luckyRoll": "Reflex saving throws"},
+        {"luckySign": "Lived through famine", "luckyRoll": "Fortitude saving throws"},
+        {"luckySign": "Resisted temptation", "luckyRoll": "Will saving throws"},
+        {"luckySign": "Charmed house", "luckyRoll": "Armour class"},
+        {"luckySign": "Speed of the Cobra", "luckyRoll": "Initiative"},
+        {"luckySign": "Bountiful Harvest", "luckyRoll": "Hits points/each level"},
+        {"luckySign": "Warrior's arm", "luckyRoll": "Critical hit tables"},
+        {"luckySign": "Unholy house", "luckyRoll": "Corruption rolls"},
+        {"luckySign": "The Broken Star", "luckyRoll": "Fumbles"},
+        {"luckySign": "Birdsong", "luckyRoll": "Number of Languages"},
+        {"luckySign": "Wild child", "luckyRoll": "Speed"}
+    ];
+     return luckySign[Math.floor(Math.random() * 27)]; 
+}
+
+	  
+function getAcolyte(){
+	var acolyte = [
+		{"armour": "Shield", "protection": 1, "speedPenality": 0, "speed": 30, "checkPenality": -1, "fumbleDie": "d8", "primaryWeapon": "Mace", "primaryWeaponDamage": "d6", "secondaryWeapon": "Sling", "secondaryWeaponDamage": "d4", "items": ", pouch containing " + Math.floor((Math.random() * 25) + 10) + " sling stones"},
+		{"armour": "Padded", "protection": 1, "speedPenality": 0, "speed": 30, "checkPenality": 0, "fumbleDie": "d8", "primaryWeapon": "Crugel (club)", "primaryWeaponDamage": "d4", "secondaryWeapon": "Sling", "secondaryWeaponDamage": "d4", "items": ", pouch containing "  + Math.floor((Math.random() * 25) + 10) +  " sling stones"},
+		{"armour": "Padded & Shield", "protection": 2, "speedPenality": 0, "speed": 30, "checkPenality": -1, "fumbleDie": "d8", "primaryWeapon": "Mace", "primaryWeaponDamage": "d6", "secondaryWeapon": "Staff", "secondaryWeaponDamage": "d4", "items": ""},
+		{"armour": "Leather", "protection": 2, "speedPenality": 0, "speed": 30, "checkPenality": -1, "fumbleDie": "d8", "primaryWeapon": "Staff", "primaryWeaponDamage": "d4", "secondaryWeapon": "Crugel (club)", "secondaryWeaponDamage": "d4", "items": ""},
+		{"armour": "Leather & Shield", "protection": 3, "speedPenality": 0, "speed": 30, "checkPenality": -2, "fumbleDie": "d8", "primaryWeapon": "Mace", "primaryWeaponDamage": "d6", "secondaryWeapon": "Club", "secondaryWeaponDamage": "d4", "items": ""}
+	];
+    return acolyte[Math.floor(Math.random() * 5)]; 
+}	
+
+function getAcolyteGear(){
+	var acolyteGear = [
+		{"gear": "backpack, 2 loaves of bread, bottle of wine, 12 candles, 50 feet of rope, "},
+		{"gear": "waterproof sack, sacred text, flint and steel, parchment paper, bar of soap, "},
+		{"gear": "small sack, lantern, flint and steel, 1 vial of holy water, jar of spiced honey, "},
+		{"gear": "large sack, bundle of 12 torches, flint and steel, incense sticks, 2 bottles of cheap wine, "},
+		{"gear": "backpack, small sack, dried fish, holy book, 1 vial of holy water, wineskin filled with cheap wine, "}
+		
+		];
+    return acolyteGear[Math.floor(Math.random() * 5)]; 
+}	
+		
+function getAcolytePersonalItems(){
+	var acolyteItems = [
+		{"items": "prayer beads, necklace with holy symbol"},
+		{"items": "rosary, small brass figurine of deity"},
+		{"items": "rosary beads, silver holy symbol"},
+		{"items": "signet ring with religious symbols, small cooper figurine of deity"},
+		{"items": "simple wooden holy symbol"},
+		];
+    return acolyteItems[Math.floor(Math.random() * 5)]; 
+}	
+	  
+/*
+addBonusLanguages() - returns Randomly selected 0th Level Character Bonus Languages
+*/
+function addBonusLanguages() {
+	var bonusLanguages = [
+		{"language": "Alignment Tongue"},
+		{"language": "Dwarf"},
+		{"language": "Elf"},
+		{"language": "Halfling"},
+		{"language": "Gnome"},
+		{"language": "Bugbear"},
+		{"language": "Goblin"},
+		{"language": "Gnoll"},
+		{"language": "Hobgolin"},
+		{"language": "Kobold"},
+		{"language": "Lizardman"},
+		{"language": "Minotaur"},
+		{"language": "Ogre"},
+		{"language": "Orc"},
+		{"language": "Troglodyte"},
+		{"language": "Giant"}
+			];
+    return bonusLanguages[Math.floor(Math.random() * 16)]; 
+}
+		
+/*
+hitPointAdjustPerLevel (luckySign, luckModifier)- returns the additional/minus hit points
+the character received per level from their Stamina modifier and whether they have the Lucky Sign "Bountiful Harvest".
+*/
+	  
+function hitPointAdjustPerLevel (luckySign, luckModifier) {
+   var adjust = 0;
+    if (luckySign != undefined && luckySign.luckySign === "Bountiful Harvest"){
+        adjust = luckModifier;
+     }
+	return adjust;
+}
+	  
+// getBaseArmourClass(agilityModifier)- returns the base armour class of the character
+function getBaseArmourClass(agilityModifier){
+	var armourClass = 10;
+	baseArmourClass = armourClass + agilityModifier;
+	return baseArmourClass;
+}	  
+
+
+function addModifierSign (modifier) {
+	if(modifier >= 0 ) {
+		return "+" + modifier;
+	}
+	else {
+		return modifier;
+	}
+}
+	  
+
+	  
+	  
+function getBonusLanguages (intelligenceModifier, luckySign, luckModifier) {
+	var bonusLanguages = 0;
+	if(bonusLanguages  != undefined && typeof bonusLanguages === 'number') {
+		bonusLanguages = intelligenceModifier;
+	}
+	else {
+		return "";
+	}
+	
+	if(luckySign != undefined && luckySign.luckySign === "Birdsong") {
+		bonusLanguages += luckModifier;
+	}
+	
+	if(bonusLanguages <=0) {
+		return "";
+	}
+	var result = ", " + addBonusLanguages().language, newLanguage = "";
+	
+	// loop
+	for(var i = 1; i < bonusLanguages; i++){
+		// 1) get a random lang
+		newLanguage = addBonusLanguages().language;
+		// 2) check the new lang is not repeative
+		if(result.indexOf(newLanguage) != -1){
+			i--;
+			// if yes continue;
+			continue;
+		} else{
+			// if not, add the new lang into the result
+			result += ", " + newLanguage;
+		}
+
+	}
+	return result;
+}
+	  
+/*
+meleeAdjust (luckySign, luckModifier) - adds bonus/penality to Melee attack based on whether the character possesses specific Lucky Signs
+*/
+function meleeAdjust (luckySign, luckModifier) {
+   var adjust = 0;
+    if (luckySign.luckySign != undefined && luckySign.luckySign === "Harsh winter"){
+        adjust = luckModifier;
+     }
+	else if (luckySign.luckySign != undefined && luckySign.luckySign === "The bull") {
+		adjust = luckModifier;
+	}
+	return adjust;
+}
+
+/*
+rangeAdjust (luckySign, luckModifier) - adds bonus/penality to Range attack based on whether the character possesses specific Lucky Signs
+*/	  
+function rangeAdjust (luckySign, luckModifier) {
+   var adjust = 0;
+    if (luckySign.luckySign != undefined && (luckySign.luckySign === "Harsh winter" || luckySign.luckySign === "Fortunate date")){
+        adjust = luckModifier;
+     }
+	return adjust;
+}
+
+/*
+adjustRef (luckySign, luckModifier) - add bonus/penality to Saving Throw based on Lucky Sign
+*/
+function adjustRef (luckySign, luckModifier) {
+   var adjust = 0;
+    if (luckySign.luckySign != undefined && (luckySign.luckySign === "Luck sign" || luckySign.luckySign === "Struck by Lightning")){
+        adjust = luckModifier;
+     }
+	return adjust;
+}
+	 
+/*
+adjustFort (luckySign, luckModifier) - add bonus/penality to Saving Throw based on Lucky Sign
+*/
+function adjustFort (luckySign, luckModifier) {
+   var adjust = 0;
+    if (luckySign.luckySign != undefined && (luckySign.luckySign === "Luck sign" || luckySign.luckySign === "Lived through famine")){
+        adjust = luckModifier;
+     }
+	return adjust;
+}
+	  
+/*
+ addLuckToSpeed (luckySign, luckModifier) adds bonuses to the character's speed if they have a positive Luck Modifier and the Lucky Sign of Wild Child
+*/
+function addLuckToSpeed (luckySign, luckModifier) {
+	var addSpeed = 0;
+	if (luckySign.luckySign != undefined && luckySign.luckySign === "Wild child" && luckModifier == 1){
+		addSpeed = 5;
+	}
+	else if (luckySign.luckySign != undefined && luckySign.luckySign === "Wild child" && luckModifier == 2){
+		addSpeed = 10;
+	}
+	else if (luckySign.luckySign != undefined && luckySign.luckySign === "Wild child" && luckModifier == 3){
+		addSpeed = 15;
+	}
+	return addSpeed;
+}
+	  
+/*
+adjustWill (luckySign, luckModifier) - add bonus/penality to Saving Throw based on Lucky Sign
+*/
+function adjustWill (luckySign, luckModifier) {
+   var adjust = 0;
+    if (luckySign.luckySign != undefined && (luckySign.luckySign === "Luck sign" || luckySign.luckySign === "Resisted temptation")){
+        adjust = luckModifier;
+     }
+	return adjust;
+}	 
+	  
+/*
+adjustInit (luckySign, luckModifier) - add bonus/penality to Initiative based on Lucky Sign
+*/
+function adjustInit (luckySign, luckModifier) {
+   var adjust = 0;
+    if (luckySign.luckySign != undefined && luckySign.luckySign === "Speed of the Cobra"){
+        adjust = luckModifier;
+     }
+	return adjust;
+}	
+
+	  
+/*
+adjustAC (luckySign, luckModifier) - add bonus/penality to AC based on Lucky Sign
+*/
+function adjustAC (luckySign, luckModifier) {
+   var adjust = 0;
+    if (luckySign.luckySign != undefined && luckySign.luckySign === "Charmed house"){
+        adjust = luckModifier;
+     }
+	return adjust;
+}	
+	  
+/*
+adjustCrit (luckySign, luckModifier) - add bonus/penality to Crit based on Lucky Sign
+*/
+function adjustCrit (luckySign, luckModifier) {
+   var adjust = luckModifier * 1;
+    if (luckySign.luckySign != undefined && luckySign.luckySign === "Warrior's arm"){
+        adjust = luckModifier * 2;
+     }
+	return adjust;
+}	
+	  
+/*
+adjustFumble (luckySign, luckModifier) - add bonus/penality to Fumble based on Lucky Sign
+*/
+function adjustFumble  (luckySign, luckModifier) {
+   var adjust = luckModifier * -1;
+    if (luckySign.luckySign != undefined && luckySign.luckySign === "The Broken Star"){
+        adjust = luckModifier * -2;
+     }
+	return adjust;
+}	
+	  
+/*addSign (modifier) Adds a + sign to value if value is 1 or greater.  If value is 0, then a empty String "" is returned.
+*/
+function addSign (modifier) {
+	if(modifier > 0 ) {
+		return "+" + modifier;
+	}
+	else if(modifier === 0) {
+		return "";
+	}
+	else {
+		return modifier;
+	}
+}
+
+
+        var imgData = "images/dcc_four_sheets_npc.png";
+        document.getElementById("character_sheet").src = imgData;
+
+	  var data = [Character(),Character(),Character(),Character()];
+	  for(var index = 0; index < 4 ; index++){
+		
+	 // var data = [Character()];
+	  //for(var index = 0; index < 1 ; index++){
+		  
+		  
+        document.getElementById("name" + index).innerHTML = data[index].name;
+	  
+        document.getElementById("strength" + index).innerHTML = data[index].strength;
+        document.getElementById("strengthMod" + index).innerHTML = addModifierSign(data[index].strengthModifier);
+	  
+        document.getElementById("agility" + index).innerHTML = data[index].agility;
+        document.getElementById("agilityMod" + index).innerHTML = addModifierSign(data[index].agilityModifier);
+	  
+        document.getElementById("stamina" + index).innerHTML = data[index].stamina;
+	  	document.getElementById("staminaMod" + index).innerHTML = addModifierSign(data[index].staminaModifier);
+	  
+        document.getElementById("personality" + index).innerHTML = data[index].personality;
+        document.getElementById("personalityMod" + index).innerHTML = addModifierSign(data[index].personalityModifier);
+	  
+        document.getElementById("intelligence" + index).innerHTML = data[index].intelligence;
+        document.getElementById("intelligenceMod" + index).innerHTML = addModifierSign(data[index].intelligenceModifier);
+	  
+        document.getElementById("luck" + index).innerHTML = data[index].luck;
+        document.getElementById("luckMod" + index).innerHTML = addModifierSign(data[index].luckModifier);
+	  
+        document.getElementById("occupation" + index).innerHTML = data[index].occupation;
+	  	  
+        document.getElementById("trainedWeapon" + index).innerHTML = data[index].trainedWeapon;
+	  
+	  	document.getElementById("luckySign" + index).innerHTML = data[index].luckySign;
+	    document.getElementById("luckyRoll" + index).innerHTML = data[index].luckyRoll;	  
+	    document.getElementById("LuckySignBonus" + index).innerHTML = addModifierSign(data[index].luckModifier);
+	 
+	   document.getElementById("hitPoints" + index).innerHTML = data[index].hitPoints;
+	  
+	  
+	    document.getElementById("baseArmourClass" + index).innerHTML = data[index].baseArmourClass;
+	    document.getElementById("armour" + index).innerHTML = data[index].armour;
+	  
+	  	document.getElementById("acBonus" + index).innerHTML = addModifierSign(data[index].acBonus);
+	  	document.getElementById("checkPen" + index).innerHTML = addModifierSign(data[index].checkPen);
+	  	document.getElementById("speedPen" + index).innerHTML = addModifierSign(data[index].speedPen);
+	  	document.getElementById("fumblePen" + index).innerHTML = data[index].fumblePen;
+	    
+	  	document.getElementById("modifiedArmourClass" + index).innerHTML = data[index].modifiedArmourClass;
+	  
+	    document.getElementById("baseLanguages" + index).innerHTML = data[index].baseLanguages;
+	    document.getElementById("bonusLanguages" + index).innerHTML = data[index].bonusLanguages;
+	  
+	  
+	    document.getElementById("fumbleDie" + index).innerHTML = data[index].fumbleDie;
+	    document.getElementById("critDie" + index).innerHTML = data[index].critDie;
+	    document.getElementById("critTable" + index).innerHTML = data[index].critTable;
+	  
+	    document.getElementById("melee" + index).innerHTML = addModifierSign(data[index].melee);
+	    document.getElementById("range" + index).innerHTML = addModifierSign(data[index].range);
+	 
+	    document.getElementById("speed" + index).innerHTML = data[index].speed;
+	  
+	  	document.getElementById("ref" + index).innerHTML = addModifierSign(data[index].ref); 
+	  	document.getElementById("fort" + index).innerHTML = addModifierSign(data[index].fort); 
+	  	document.getElementById("will" + index).innerHTML = addModifierSign(data[index].will);
+	  
+	  	document.getElementById("init" + index).innerHTML = addModifierSign(data[index].init);
+	  
+	  	document.getElementById("wealth" + index).innerHTML = data[index].wealth;
+	    document.getElementById("wealth2" + index).innerHTML = data[index].wealth2;
+	  
+	  	document.getElementById("equipment" + index).innerHTML = data[index].equipment;
+	  
+	  
+	  	document.getElementById("primaryWeapon" + index).innerHTML = data[index].primaryWeapon;
+	  	document.getElementById("primaryWeaponDamage" + index).innerHTML = data[index].primaryWeaponDamage;
+	  	document.getElementById("secondaryWeapon" + index).innerHTML = data[index].secondaryWeapon;
+	  	document.getElementById("secondaryWeaponDamage" + index).innerHTML = data[index].secondaryWeaponDamage;
+	  
+
+	  	document.getElementById("dieRollMethod" + index).innerHTML = data[index].dieRollMethod;
+	  	document.getElementById("special" + index).innerHTML = data[index].special;
+	  }
+
+	  
+  </script>
+		
+	
+    
+</body>
+</html>
